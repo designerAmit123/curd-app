@@ -1,0 +1,36 @@
+<div class="conatiner">
+  <h1 class="text-center">CRUD App</h1>
+  <a href="#" routerLink="/post/create" class="btn btn-success float-right">Create New Post</a>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Body</th>
+        <th width="220px">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let post of posts">
+        <td>{{ post.id}}</td>
+        <td>{{ post.title }}</td>
+        <td>{{ post.body }}</td>
+        <td>
+          <a href="" [routerLink]="['/post/', post.id, 'view']" class="btn btn-info">View</a>
+          <a href="" [routerLink]="['/post/', post.id, 'edit']" class="btn btn-info">Edit</a>
+          <button type="button" class="btn btn-danger" (click)="deletePost(post.id)">Delete</button>
+        </td>
+      </tr>
+      <!-- <tr>
+        <td>1</td>
+        <td>MEAN</td>
+        <td>MongoDB, Express, Angular and Node</td>
+        <td>
+          <a href=""  class="btn btn-info">View</a>&nbsp;
+          <a href=""  class="btn btn-info">Edit</a>&nbsp;
+          <button type="button" class="btn btn-danger">Delete</button>
+        </td>
+      </tr> -->
+    </tbody>
+  </table>
+</div>
