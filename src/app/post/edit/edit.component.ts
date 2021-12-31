@@ -37,4 +37,12 @@ export class EditComponent implements OnInit {
   get f(){
     return this.form.controls;
   }
+
+  submit(){
+    console.log(this.form.value);
+    this.postService.update(this.id, this.form.value).subscribe((res:any)=>{
+      console.log('Post Updated Succesfully');
+      this.router.navigateByUrl("post/index");
+    })
+  }
 }

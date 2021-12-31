@@ -14,6 +14,6 @@
         <div *ngIf="f['body'].errors && f['body'].errors['required']">Body is Required</div>
       </div>
     </div>
-    <button class="btn btn-primary" type="submit">Update</button>
+    <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Update</button>
   </form>
 </div>
