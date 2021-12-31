@@ -1,0 +1,15 @@
+.float-right{
+  float: right;
+}
+.table{
+  width: 100%;
+}
+.btn{
+  margin-right: 5px;
+}
+tr td{
+  vertical-align: middle;
+}
+.btn-post{
+  margin-bottom: 10px;
+}

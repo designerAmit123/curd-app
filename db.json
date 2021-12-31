@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "MEAN",
+      "body": "MongoDB, Express, Angular and NodeJS"
+    },
+    {
+      "title": "MERN",
+      "body": "MongoDB, Express, React and NodeJS",
+      "id": 2
+    }
+  ]
+}

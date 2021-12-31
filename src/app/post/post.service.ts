@@ -5,6 +5,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {  Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
+
+
 import { Post } from './post';
 
 @Injectable({
@@ -12,7 +14,9 @@ import { Post } from './post';
 })
 export class PostService {
 
-  private apiURL = "https://jsonplaceholder.typicode.com/";
+  private apiURL = "http://localhost:3000";
+
+  // private apiURL = "https://amitkduiuxdesigner.co.in"
 
   httpOptions = {
     headers: new HttpHeaders ({
@@ -23,13 +27,13 @@ export class PostService {
   constructor(private httpClient : HttpClient) { }
 
   getAll() : Observable<any> {
-    return this.httpClient.get(this.apiURL + '/post/')
+    return this.httpClient.get(this.apiURL + '/posts/')
     .pipe(
       catchError(this.errorHandler)
       )
   }
 
-  create(post:Post): Observable<any> {
+  create(post:Post) : Observable<any> {
     return this.httpClient.post(this.apiURL + '/posts/', JSON.stringify(post), this.httpOptions)
 
     .pipe(

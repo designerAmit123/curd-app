@@ -1,7 +1,7 @@
-<div class="conatiner">
+<div class="container">
   <h1 class="text-center">CRUD App</h1>
-  <a href="#" routerLink="/post/create" class="btn btn-success float-right">Create New Post</a>
-  <table class="table table-striped">
+  <a href="#" routerLink="/post/create" class="btn btn-info float-right btn-post">Create New Post</a>
+  <table class="table table-bordered table-striped table-responive">
     <thead>
       <tr>
         <th>Id</th>
@@ -21,16 +21,6 @@
           <button type="button" class="btn btn-danger" (click)="deletePost(post.id)">Delete</button>
         </td>
       </tr>
-      <!-- <tr>
-        <td>1</td>
-        <td>MEAN</td>
-        <td>MongoDB, Express, Angular and Node</td>
-        <td>
-          <a href=""  class="btn btn-info">View</a>&nbsp;
-          <a href=""  class="btn btn-info">Edit</a>&nbsp;
-          <button type="button" class="btn btn-danger">Delete</button>
-        </td>
-      </tr> -->
     </tbody>
   </table>
 </div>
