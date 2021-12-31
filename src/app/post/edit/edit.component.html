@@ -1,6 +1,6 @@
 <div class="container">
   <h1>Update Post</h1>
-  <a href="#" routerLink="/post/index" class="btn btn-info float-right">Back</a>
+  <a href="#" routerLink="/post/index" class="btn btn-primary float-right">Back</a>
   <form [formGroup]="form" (ngSubmit)="submit()">
     <div class="form-group">
       <input type="text" formControlName="title" [(ngModel)]="post.title" id="title" placeholder="Enter Title" class="form-control">

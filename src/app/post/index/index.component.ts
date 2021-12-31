@@ -26,7 +26,7 @@ export class IndexComponent implements OnInit {
   deletePost(id:number){
     this.postService.delete(id).subscribe(res => {
       this.posts = this.posts.filter(item => item.id !== id);
-      console.log("Post Deleted!")
+      console.log("Post Deleted!");
     })
   }
 

@@ -58,7 +58,7 @@ export class PostService {
   }
 
   delete(id:number){
-    return this.httpClient.delete(this.apiURL + '/posts' + id, this.httpOptions)
+    return this.httpClient.delete(this.apiURL + '/posts/' + id, this.httpOptions)
 
     .pipe(
       catchError(this.errorHandler)

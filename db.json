@@ -1,19 +1,14 @@
 {
   "posts": [
     {
-      "id": 1,
       "title": "MEAN",
-      "body": "MongoDB, Express, Angular and NodeJS"
+      "body": "MongoDB, Express, Angular and Node",
+      "id": 1
     },
     {
       "title": "MERN",
-      "body": "MongoDB, Express, React and NodeJS",
+      "body": "MongoDB, Express, React and Node",
       "id": 2
-    },
-    {
-      "title": "ABCD",
-      "body": "Any Budy Can Dance",
-      "id": 3
     }
   ]
 }
